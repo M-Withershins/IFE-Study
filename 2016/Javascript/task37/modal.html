@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>浮出层组件</title>
+    <link rel="stylesheet" type="text/css" href="modal.css">
+</head>
+<body>
+<div id="modalBox">
+    <!-- 组件 -->
+</div>
+<script type="text/javascript" src="modal.js"></script>
+
+<script type="text/javascript">
+    var modalBox = document.getElementById('modalBox');
+    var success = function () {
+        alert('success');
+    };
+    var cancel = function () {
+        alert('cancel');
+    };
+    var modalConfig = {
+        modalBox: modalBox,
+        backgroundScroll: true,
+        titleText: "百度IFE",
+        conText: "组件化作业-第一题",
+        success: success,
+        cancel: cancel,
+        dragWrap: true,
+    };
+    var modal = Modal(modalConfig);
+    modal.init(modalConfig);
+    modal.drag();
+
+    /*
+     * 	modal.addFun(eventName,fn);
+     *
+     *	modal.removeFun(eventName);
+     *
+     * */
+
+</script>
+</body>
+</html>

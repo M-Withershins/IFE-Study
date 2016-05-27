@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>task04</title>
+    <style type="text/css">
+        .greydiv{
+            position: fixed;
+            top: 50%;
+            left: 50%;
+
+            width: 400px;
+            height: 200px;
+            margin-top: -100px;
+            margin-left: -200px;
+
+            background-color: #999;
+        }
+        .leftcir,
+        .rightcir{
+            width: 50px;
+            height: 50px;
+
+            border-radius: 50%;
+            background-color: yellow;
+        }
+        .leftcir{
+            border-radius: 0 0 50px 0;
+        }
+        .rightcir{
+            position: absolute;
+            right: 0;
+            bottom: 0;
+
+            border-radius: 50px 0 0 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="greydiv">
+        <div class="leftcir"></div>
+        <div class="rightcir"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>task9</title>
+    <style type="text/css">
+        .container{
+            width: 100%;
+            margin: 50px auto;
+            border: 1px solid #999;
+            display: flex;
+        }
+        .con{
+            width: 150px;
+            border: 1px solid #D75F52;
+            margin: 20px;
+        }
+        @media all and (min-width:640px){
+            .container{
+                justify-content: space-between;
+                align-items: center;
+            }
+        }
+        @media all and (max-width:640px){
+            .container{
+                align-items: flex-start;
+                flex-wrap: wrap;
+            }
+            .item{
+                order: -1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="con" style="height:120px;">A</div>
+        <div class="con" style="height:100px;">B</div>
+        <div class="con" style="height:40px;">C</div>
+        <div class="con item" style="height:200px;border-color:#329CD7;">D</div>
+    </div>
+</body>
+</html> 

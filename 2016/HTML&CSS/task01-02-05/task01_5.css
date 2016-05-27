@@ -1,0 +1,284 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+body{
+    background-color: #dedede;
+}
+input{
+    outline: none;
+}
+.main img{
+    margin: 20px 0 10px;
+
+    border: 1px solid #eee;
+}
+ul{
+    margin-right: 20px;
+
+    list-style: none;
+}
+h1{
+    font-size: 30px;
+}
+h2{
+    font-size: 22px;
+}
+header{
+    width: 100%;
+    height: 60px;
+
+    background-color: #333;
+}
+.logo{
+    float: left;
+}
+header ul{
+    float: right;
+
+    list-style: none;
+}
+header li{
+    line-height: 60px;
+
+    display: inline-block;
+
+    margin-right: 10px;
+}
+header li a{
+    font-size: 14px;
+
+    color: #fff;
+}
+header li a:hover{
+    color: #8c9593;
+}
+header .logo a{
+    font-size: 20px;
+    line-height: 60px;
+
+    margin-left: 30px;
+
+    color: #fff;
+}
+.main{
+    margin-right: 415px;
+}
+.main article,
+aside{
+    line-height: 2;
+
+    overflow-x: hidden;
+
+    margin: 20px;
+    padding: 20px;
+
+    border: 1px solid #cdcdcd;
+    border-radius: 5px;
+    background-color: #fff;
+    -webkit-box-shadow: 0.5px 0.5px 0.5px #787878;
+       -moz-box-shadow: 0.5px 0.5px 0.5px #787878;
+            box-shadow: 0.5px 0.5px 0.5px #787878;
+}
+.main .aside{
+    padding: 20px;
+}
+.main p{
+    font-size: 16px;
+    line-height: 1.5;
+}
+.main address{
+    font-size: 12px;
+    font-style: normal;
+}
+.main .imgs{
+    overflow: hidden;
+}
+.main .imgs .title{
+    font-size: 30px;
+    font-weight: 900;
+
+    margin-bottom: 10px;
+}
+.main .imgs img{
+    width: 150px;
+    height: 100px;
+}
+.main .imgs div{
+    float: left;
+
+    width: 200px;
+    margin: 20px;
+
+    text-align: center;
+
+    border: 1px solid #eee;
+    border-radius: 5px;
+}
+.main .imgs div p{
+    font-size: 20px;
+    line-height: 2;
+
+    text-align: center;
+}
+.main .list{
+    margin: 20px;
+}
+.main ol{
+    margin: 20px 30px;
+}
+.main table{
+    width: 95%;
+    margin: 20px auto;
+
+    border-collapse: collapse;
+
+    text-align: left;
+
+    border: 1px solid #eee;
+    border-right: 1px solid #46433f;
+}
+.main table td,
+.main table th{
+    padding: 5px;
+
+    border: 1px solid #46433f;
+}
+.main table th{
+    color: #fff;
+    border-right: 1px solid #eee;
+    background-color: #46433f;
+}
+.main tfoot td{
+    color: #fff;
+    background-color: #a5a5a5;
+}
+.main thead th{
+    border-right: 1px solid #46433f;
+}
+aside{
+    position: absolute;
+    right: 0;
+
+    width: 340px;
+}
+aside h1{
+    font-size: 25px;
+
+    padding-left: 10px;
+
+    border-left: 5px solid #46433f;
+}
+aside form{
+    font-size: 17px;
+
+    position: relative;
+
+    width: 80%;
+    margin: 10px auto;
+    padding: 30px;
+
+    text-align: center;
+
+    border: 1px solid #eee;
+}
+aside .write input{
+    font-size: 16px;
+    /* float: right; */
+
+    width: 93%;
+    padding: 5px 5px 5px 10px;
+
+    border: 1px solid #eee;
+    border-radius: 5px;
+    outline: none;
+}
+aside .tip{
+    font-size: 14px;
+
+    position: relative;
+    top: -15px;
+    right: -60px;
+
+    color: #d74f45;
+}
+aside form p{
+    overflow: hidden;
+    /* width: 100%; */
+
+    margin: 0 auto 10px;
+    /* text-align: right; */
+}
+aside form .title{
+    font-size: 17px;
+
+    position: relative;
+    /* top: 0px; */
+
+    float: left;
+
+    padding-left: 10px;
+
+    border-left: 3px solid #333;
+}
+aside .select span,
+aside .select input{
+    width: 6%;
+
+    vertical-align: baseline;
+}
+aside .submit{
+    font-size: 20px;
+    line-height: 40px;
+
+    width: 200px;
+    margin: 20px;
+    padding: 5px;
+
+    cursor: pointer;
+
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    background-color: #333;
+}
+aside .submit:hover{
+    background-color: #a5a5a5;
+}
+aside textarea{
+    font-size: 14px;
+
+    width: 256px;
+    height: 120px;
+    padding: 5px;
+
+    resize: none;
+    vertical-align: text-top;
+
+    color: #8c8888;
+    border: 1px solid #989494;
+    border-radius: 5px;
+    outline: none;
+}
+aside .texttitle{
+    float: left;
+
+    padding-left: 10px;
+
+    border-left: 3px solid #333;
+}
+footer{
+    font-size: 20px;
+    line-height: 60px;
+
+    height: 60px;
+
+    text-align: center;
+
+    color: #fff;
+    background-color: #333;
+}

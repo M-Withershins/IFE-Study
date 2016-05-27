@@ -1,0 +1,111 @@
+ table{
+    font-weight: 900;
+
+    padding: 10px;
+}
+table thead td{
+    color: #fff;
+    background-color: #000;
+}
+table tbody > tr:nth-child(1),
+table tbody > tr:nth-child(2),
+table tbody > tr:nth-child(3){
+    color: #d74f33;
+}
+table tbody tr:nth-child(2n){
+    background-color: #999;
+}
+/*！！！css末尾加上『;』可能会使下列所有的属性失效*/
+input{
+    font-size: 20px;
+
+    width: 200px;
+    margin: 20px;
+
+    -webkit-transition: 1s width ease;
+         -o-transition: 1s width ease;
+            transition: 1s width ease;
+}
+input:focus{
+    width: 400px;
+}
+
+@keyframes scrollx{
+    0%{
+        left: 0;
+    }
+    50%{
+        left: -400px;
+    }
+    100%{
+        left: -800px;
+    }
+}
+
+.banner{
+    position: relative;
+
+    overflow: hidden;
+
+    width: 400px;
+    height: 200px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.container{
+    position: relative;
+
+    width: 1600px;
+}
+.container:hover{
+    animation: 5s scrollx infinite;
+}
+.pic{
+    font-size: 30px;
+
+    position: relative;
+
+    float: left;
+
+    width: 400px;
+    height: 200px;
+
+    -webkit-transition: 10s left ease;
+         -o-transition: 10s left ease;
+            transition: 10s left ease;
+
+    color: #fff;
+}
+.spot{
+    position: absolute;
+    z-index: 100;
+    right: 0;
+    bottom: 0;
+}
+.spot a{
+    font-size: 20px;
+    line-height: 30px;
+
+    display: inline-block;
+
+    width: 30px;
+    height: 30px;
+
+    text-align: center;
+    text-decoration: none;
+
+    color: #fff;
+    background-color: rgba(255,255,255,0.6);
+}
+.spot a:hover{
+    cursor: pointer;
+}
+#a:target{
+    left: 0;
+}
+#b:target{
+    left: -400px;
+}
+#c:target{
+    left: -800px;
+}
