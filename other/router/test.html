@@ -12,34 +12,6 @@
         <li><a href="#/page/123">page/123</a></li>
         <li><a href="#/page/2w">page/2w</a></li>
     </ul>
-    <pre>
-        1. 路由初始化规则
-            var routes = [{
-                path:'/home',
-                name:'string-one',
-                params:[],
-                hander:function(){alert('/home');}
-            }];
-
-            var myRouter = new Router(routes)
-                                .add('/newadd',function(){
-                                    alert('/newadd');
-                                })
-                                .listen();  //必须进行listen()初始化
-        2. 支持正则输入匹配
-        3.  add()
-                @path:string,每一对"//"之间可以为regexp或string
-                @name:string,[*options*]
-                @hander:function
-
-            remove()
-                @name:string;可以为path
-
-            go()
-                @path：string；不可以为regexp
-
-            listen()
-    </pre>
     <script src="route.js"></script>
     <script type="text/javascript">
         var routes = [{

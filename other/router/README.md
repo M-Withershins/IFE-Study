@@ -1,7 +1,9 @@
 ## 简易的前端路由
 
-[demo展示](./test.html)  
-[源码地址](./route.js)
+[demo展示](http://m-withershins.github.io/IFE-Study/other/router/test.html)  
+[源码地址](https://github.com/M-Withershins/IFE-Study/blob/gh-pages/other/router/route.js)  
+
+
 1. 路由初始化规则
 
     var routes = [{
