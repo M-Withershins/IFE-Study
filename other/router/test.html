@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>自制路由器</title>
+</head>
+<body>
+    <ul>
+        <li><a href="#/home">HOME</a></li>
+        <li><a href="#/newadd">newadd</a></li>
+        <li><a href="#/11www2233/222">11www2233/222</a></li>
+        <li><a href="#/page/123">page/123</a></li>
+        <li><a href="#/page/2w">page/2w</a></li>
+    </ul>
+    <pre>
+        1. 路由初始化规则
+            var routes = [{
+                path:'/home',
+                name:'string-one',
+                params:[],
+                hander:function(){alert('/home');}
+            }];
+
+            var myRouter = new Router(routes)
+                                .add('/newadd',function(){
+                                    alert('/newadd');
+                                })
+                                .listen();  //必须进行listen()初始化
+        2. 支持正则输入匹配
+        3.  add()
+                @path:string,每一对"//"之间可以为regexp或string
+                @name:string,[*options*]
+                @hander:function
+
+            remove()
+                @name:string;可以为path
+
+            go()
+                @path：string；不可以为regexp
+
+            listen()
+    </pre>
+    <script src="route.js"></script>
+    <script type="text/javascript">
+        var routes = [{
+            path:'/home',
+            name:'string-one',
+            params:[],
+            hander:function(){alert('/home');}
+        },{
+            path: '/page/\w+',
+            name:'string-double',
+            params:[],
+            hander:function(){alert('/page/\w+');}
+        },{
+            path: '/^\d+\d$/\d*',
+            name:'number',
+            params:[],
+            hander:function(){alert('/\d+/\d*');}
+        }];
+
+        var myRouter = new Router(routes)
+                            .add('/newadd',function(){
+                                alert('/newadd');
+                            })
+                            .listen();
+    </script>
+</body>
+</html>
